@@ -64,9 +64,9 @@ export default function AboutSection() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: "Proyectos entregados", value: "+20" },
-                { label: "Clientes activos", value: "+15" },
-                { label: "Años en el mercado", value: "4+" },
+                { label: "Proyectos entregados", value: "5+" },
+                { label: "Clientes", value: "+" },
+                { label: "Años de experiencia", value: "2+" },
                 { label: "Tecnologías dominadas", value: "+20" },
               ].map((stat) => (
                 <div

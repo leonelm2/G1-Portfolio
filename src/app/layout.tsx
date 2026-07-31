@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: "es_AR",
     url: "https://g1softwaresolutions.com",
     siteName: "G1 Software Solutions",
-    title: "G1 Software Solutions | Software Factory Argentina",
+    title: "G1 Software Solutions",
     description:
       "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
     images: [
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "G1 Software Solutions - Software Factory",
+        alt: "G1 Software Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "G1 Software Solutions | Software Factory Argentina",
+    title: "G1 Software Solutions",
     description:
       "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
     images: ["/og-image.png"],
