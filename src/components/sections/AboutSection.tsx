@@ -94,9 +94,17 @@ export default function AboutSection() {
               <div className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-blue-500/20 hover:bg-blue-500/[0.03] transition-all duration-300 text-center">
                 {/* Avatar */}
                 <div className="w-20 h-20 rounded-2xl mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-500/20 to-blue-700/20 border border-white/5 flex items-center justify-center relative">
-                  <span className="text-2xl font-bold text-blue-400">
-                    {getInitials(member.name)}
-                  </span>
+                  {member.avatar ? (
+                    <img
+                      src={member.avatar}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <span className="text-2xl font-bold text-blue-400">
+                      {getInitials(member.name)}
+                    </span>
+                  )}
                 </div>
 
                 {/* Info */}
