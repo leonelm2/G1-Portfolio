@@ -31,18 +31,26 @@ export default function PortfolioSection() {
             return (
               <AnimatedSection key={project.slug} delay={0.07 * i} direction="up">
                 <div className="group h-full flex flex-col rounded-2xl border border-white/5 bg-white/[0.02] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 overflow-hidden">
-                  {/* Image placeholder */}
+                  {/* Image */}
                   <div className="relative h-48 bg-gradient-to-br from-blue-900/30 via-[#111] to-[#0A0A0A] overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-4xl font-bold text-blue-600/20">
-                          {project.name.split(" ").map(w => w[0]).join("").slice(0, 3)}
-                        </div>
-                        <div className="text-xs text-gray-700 mt-2 font-medium">
-                          {project.category}
+                    {project.thumbnail ? (
+                      <img
+                        src={project.thumbnail}
+                        alt={project.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-4xl font-bold text-blue-600/20">
+                            {project.name.split(" ").map(w => w[0]).join("").slice(0, 3)}
+                          </div>
+                          <div className="text-xs text-gray-700 mt-2 font-medium">
+                            {project.category}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
@@ -72,22 +80,7 @@ export default function PortfolioSection() {
                       {project.shortDescription}
                     </p>
 
-                    {/* Tech badges */}
-                    <div className="flex flex-wrap gap-1.5 mb-5">
-                      {project.technologies.slice(0, 4).map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/5 text-xs text-gray-500"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 4 && (
-                        <span className="px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/5 text-xs text-gray-600">
-                          +{project.technologies.length - 4}
-                        </span>
-                      )}
-                    </div>
+
 
                     {/* CTA */}
                     <Link
