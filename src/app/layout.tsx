@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000"
+  ),
   title: {
     default: "G1 Software Solutions | Software Factory Argentina",
     template: "%s | G1 Software Solutions",
@@ -34,29 +39,34 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "G1 Software Solutions" }],
   creator: "G1 Software Solutions",
+  icons: {
+    icon: "/logo-g1.jpeg",
+    shortcut: "/logo-g1.jpeg",
+    apple: "/logo-g1.jpeg",
+  },
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://g1softwaresolutions.com",
+    url: "/",
     siteName: "G1 Software Solutions",
     title: "G1 Software Solutions",
     description:
       "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/logo-g1.jpeg",
+        width: 800,
+        height: 800,
         alt: "G1 Software Solutions",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "G1 Software Solutions",
     description:
       "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
-    images: ["/og-image.png"],
+    images: ["/logo-g1.jpeg"],
   },
   robots: {
     index: true,
