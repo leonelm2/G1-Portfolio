@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   publisher: "G1 Software Solutions",
   icons: {
     icon: [
+      { url: "/og-image.png" },
       { url: "/logo-g1.jpeg" },
-      { url: "/logo.png", type: "image/png" },
     ],
-    shortcut: "/logo-g1.jpeg",
-    apple: "/logo-g1.jpeg",
+    shortcut: "/og-image.png",
+    apple: "/og-image.png",
   },
   openGraph: {
     type: "website",
@@ -53,18 +53,11 @@ export const metadata: Metadata = {
       "Desarrollamos software, aplicaciones web y móviles, sistemas de gestión y soluciones tecnológicas a medida para empresas y emprendedores.",
     images: [
       {
-        url: "/logo.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "G1 Software Solutions",
-        type: "image/png",
-      },
-      {
-        url: "/logo-g1.jpeg",
-        width: 800,
-        height: 800,
         alt: "G1 Software Solutions Logo",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
   },
@@ -73,7 +66,7 @@ export const metadata: Metadata = {
     title: "G1 Software Solutions",
     description:
       "Desarrollamos software, aplicaciones web y móviles, sistemas de gestión y soluciones tecnológicas a medida para empresas y emprendedores.",
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
