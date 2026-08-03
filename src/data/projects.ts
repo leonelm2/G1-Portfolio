@@ -13,9 +13,12 @@ export const projects: Project[] = [
     solution:
       "Desarrollamos una web app fluida e intuitiva que permite simular la toma de decisiones de un DT, evaluar escenarios y gestionar el planteo del equipo con una experiencia inmersiva.",
     status: "completed",
-    thumbnail: "/projects/scalonet/thumb.jpg",
+    thumbnail: "/projects/scalonet/thumb.png",
     images: [
-      "/projects/scalonet/screen1.jpg",
+      "/projects/scalonet/screen1.png",
+      "/projects/scalonet/screen2.png",
+      "/projects/scalonet/screen3.png",
+      "/projects/scalonet/screen4.png",
     ],
     demoUrl: "https://scalonet-app.vercel.app/",
     technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
@@ -39,10 +42,14 @@ export const projects: Project[] = [
     solution:
       "Creamos una plataforma que permite a los comercios publicar sus excedentes en tiempo real ya los consumidores adquirir paquetes o productos con descuentos importantes, promoviendo el consumo responsable.",
     status: "in-progress",
-    thumbnail: "/projects/salva/thumb.jpg",
+    thumbnail: "/projects/salva/thumb.png",
     images: [
-      "/projects/salva/screen1.jpg",
+      "/projects/salva/screen1.png",
+      "/projects/salva/screen2.png",
+      "/projects/salva/screen3.png",
+      "/projects/salva/screen4.png",
     ],
+    demoUrl: "https://salva-ten.vercel.app/",
     technologies: ["React Native", "Next.js", "TypeScript", "Node.js"],
     features: [
       "Publicación de excedentes de alimentos en tiempo real",
@@ -71,7 +78,7 @@ export const projects: Project[] = [
       "/projects/stockflow/screen3.png",
       "/projects/stockflow/screen4.png",
     ],
-    demoUrl: "",
+    demoUrl: "https://sistemastock-hazel.vercel.app",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     features: [
       "Gestión de productos",
@@ -80,66 +87,6 @@ export const projects: Project[] = [
       "Reportes inteligentes",
     ],
     category: "Web App",
-  },
-  {
-    slug: "ecommerce",
-    name: "E-commerce",
-    shortDescription:
-      "Tienda online completa con catálogo de productos, carrito, pasarela de pagos y panel de administración.",
-    fullDescription:
-      "Plataforma de e-commerce moderna y escalable con catálogo dinámico, carrito de compras, integración con pasarelas de pago locales (Mercado Pago) y un panel administrativo intuitivo para gestionar productos, pedidos y clientes.",
-    problem:
-      "Un comercio local quería expandirse al canal online pero no encontraba una solución que se adaptara a sus necesidades específicas, con medios de pago locales y gestión simplificada de inventario.",
-    solution:
-      "Desarrollamos una tienda online a medida integrada con Mercado Pago, gestión de stock automática y un panel de administración fácil de usar. El sitio está optimizado para conversión y carga rápida en mobile.",
-    status: "completed",
-    thumbnail: "/projects/ecommerce/thumb.jpg",
-    images: [
-      "/projects/ecommerce/screen1.jpg",
-      "/projects/ecommerce/screen2.jpg",
-      "/projects/ecommerce/screen3.jpg",
-    ],
-    demoUrl: "https://demo.g1.dev/ecommerce",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "MercadoPago API"],
-    features: [
-      "Catálogo dinámico con filtros",
-      "Carrito y checkout optimizado",
-      "Integración Mercado Pago",
-      "Panel de administración",
-      "Gestión de pedidos",
-      "Envíos y tracking",
-    ],
-    category: "E-commerce",
-  },
-  {
-    slug: "landing-empresarial",
-    name: "Landing Page Empresarial",
-    shortDescription:
-      "Sitio web corporativo de alto impacto con diseño premium, optimización SEO y formulario de contacto.",
-    fullDescription:
-      "Landing page corporativa de alta conversión para una empresa de servicios B2B. Diseño premium con animaciones fluidas, secciones estratégicas para transmitir confianza y un formulario de contacto integrado con CRM.",
-    problem:
-      "La empresa no tenía presencia digital profesional. Sus clientes potenciales buscaban sus servicios online y no los encontraban, perdiendo oportunidades de negocio frente a competidores con mejor presencia web.",
-    solution:
-      "Diseñamos y desarrollamos una landing page de alto impacto con copywriting estratégico, optimización SEO completa y formularios integrados con su CRM. El sitio logró posicionarse en la primera página de Google en 3 meses.",
-    status: "completed",
-    thumbnail: "/projects/landing/thumb.jpg",
-    images: [
-      "/projects/landing/screen1.jpg",
-      "/projects/landing/screen2.jpg",
-      "/projects/landing/screen3.jpg",
-    ],
-    demoUrl: "https://demo.g1.dev/landing",
-    technologies: ["Next.js", "TypeScript", "Framer Motion", "Resend"],
-    features: [
-      "Diseño premium responsive",
-      "Optimización SEO completa",
-      "Formulario integrado con CRM",
-      "Animaciones con Framer Motion",
-      "Core Web Vitals optimizados",
-      "Open Graph y metadatos",
-    ],
-    category: "Web Marketing",
   },
 ];
 
