@@ -33,52 +33,32 @@ export default function AboutSection() {
 
         {/* About text */}
         <AnimatedSection delay={0.1} className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-5">
-              <h3 className="text-2xl font-bold text-white">
-                Construimos software que importa
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                En G1 combinamos experiencia técnica con visión de negocio para
-                desarrollar productos digitales que realmente impactan. Desde el
-                primer wireframe hasta el deploy en producción, estamos comprometidos
-                con la calidad y la excelencia.
-              </p>
-              <p className="text-gray-400 leading-relaxed">
-                Trabajamos con startups, PyMEs y empresas que buscan un socio
-                tecnológico de confianza. No somos sólo proveedores, somos parte
-                de tu equipo.
-              </p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                {["Calidad", "Transparencia", "Innovación", "Compromiso"].map(
-                  (val) => (
-                    <span
-                      key={val}
-                      className="px-3 py-1 rounded-full border border-white/10 text-sm text-gray-300 bg-white/[0.03]"
-                    >
-                      {val}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: "Proyectos entregados", value: "2+" },
-                { label: "Clientes", value: "+2" },
-                { label: "Años de experiencia", value: "2+" },
-                { label: "Tecnologías dominadas", value: "+10" },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-blue-500/20 transition-colors duration-300"
-                >
-                  <div className="text-3xl font-bold text-white mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-gray-500">{stat.label}</div>
-                </div>
-              ))}
+          <div className="max-w-3xl mx-auto space-y-6 text-center">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              Construimos software que importa
+            </h3>
+            <p className="text-gray-400 leading-relaxed text-base sm:text-lg">
+              En G1 combinamos experiencia técnica con visión de negocio para
+              desarrollar productos digitales que realmente impactan. Desde el
+              primer wireframe hasta el deploy en producción, estamos comprometidos
+              con la calidad y la excelencia.
+            </p>
+            <p className="text-gray-400 leading-relaxed text-base sm:text-lg">
+              Trabajamos con startups, PyMEs y empresas que buscan un socio
+              tecnológico de confianza. No somos sólo proveedores, somos parte
+              de tu equipo.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
+              {["Calidad", "Transparencia", "Innovación", "Compromiso"].map(
+                (val) => (
+                  <span
+                    key={val}
+                    className="px-4 py-1.5 rounded-full border border-white/10 text-sm text-gray-300 bg-white/[0.03]"
+                  >
+                    {val}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </AnimatedSection>
