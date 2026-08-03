@@ -107,25 +107,7 @@ export default function HeroSection() {
           </a>
         </motion.div>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-wrap items-center justify-center gap-8 mt-16 pt-8 border-t border-white/5"
-        >
-          {[
-            { value: "+2", label: "Proyectos entregados" },
-            { value: "+2", label: "Clientes satisfechos" },
-            { value: "+3", label: "Años de experiencia" },
-            { value: "100%", label: "Código a medida" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl font-bold text-white">{stat.value}</div>
-              <div className="text-xs text-gray-500 mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
+
 
         {/* Scroll indicator */}
         <motion.div
