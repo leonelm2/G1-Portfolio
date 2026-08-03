@@ -14,48 +14,43 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const getBaseUrl = () => {
-  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
-  if (process.env.VERCEL_PROJECT_PRODUCTION_URL)
-    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "http://localhost:3000";
-};
-
 export const metadata: Metadata = {
-  metadataBase: new URL(getBaseUrl()),
+  metadataBase: new URL("https://g1softwaresolutions.vercel.app"),
   title: {
-    default: "G1 Software Solutions | Software Factory Argentina",
+    default: "G1 Software Solutions | Desarrollo de Software a Medida",
     template: "%s | G1 Software Solutions",
   },
   description:
-    "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida para empresas que quieren crecer. Argentina.",
+    "Desarrollamos software, aplicaciones web y móviles, sistemas de gestión y soluciones tecnológicas a medida para empresas y emprendedores.",
   keywords: [
     "desarrollo de software",
     "software factory",
-    "desarrollo web",
+    "aplicaciones web",
     "aplicaciones móviles",
-    "Argentina",
-    "Next.js",
-    "React",
-    "Node.js",
+    "sistemas de gestión",
+    "soluciones tecnológicas",
     "G1 Software Solutions",
+    "Argentina",
   ],
   authors: [{ name: "G1 Software Solutions" }],
   creator: "G1 Software Solutions",
+  publisher: "G1 Software Solutions",
   icons: {
-    icon: "/logo-g1.jpeg",
+    icon: [
+      { url: "/logo-g1.jpeg" },
+      { url: "/logo.png", type: "image/png" },
+    ],
     shortcut: "/logo-g1.jpeg",
     apple: "/logo-g1.jpeg",
   },
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "/",
+    url: "https://g1softwaresolutions.vercel.app",
     siteName: "G1 Software Solutions",
     title: "G1 Software Solutions",
     description:
-      "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
+      "Desarrollamos software, aplicaciones web y móviles, sistemas de gestión y soluciones tecnológicas a medida para empresas y emprendedores.",
     images: [
       {
         url: "/logo.png",
@@ -68,7 +63,7 @@ export const metadata: Metadata = {
         url: "/logo-g1.jpeg",
         width: 800,
         height: 800,
-        alt: "G1 Software Solutions",
+        alt: "G1 Software Solutions Logo",
         type: "image/jpeg",
       },
     ],
@@ -77,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "G1 Software Solutions",
     description:
-      "Transformamos ideas en software. Desarrollamos aplicaciones web, móviles y sistemas a medida.",
+      "Desarrollamos software, aplicaciones web y móviles, sistemas de gestión y soluciones tecnológicas a medida para empresas y emprendedores.",
     images: ["/logo.png"],
   },
   robots: {
