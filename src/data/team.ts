@@ -4,7 +4,7 @@ export const team: TeamMember[] = [
   {
     id: "1",
     name: "Leonel Muñoz",
-    role: "Co-fundador & Full Stack Developer",
+    role: "Co-fundador & Developer",
     description:
       "Co-fundador de G1, apasionado por crear soluciones digitales de alto impacto. Especialista en arquitecturas modernas y desarrollo full stack.",
     avatar: "/team/leonel.jpg",

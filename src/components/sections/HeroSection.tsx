@@ -115,9 +115,9 @@ export default function HeroSection() {
           className="flex flex-wrap items-center justify-center gap-8 mt-16 pt-8 border-t border-white/5"
         >
           {[
-            { value: "+20", label: "Proyectos entregados" },
-            { value: "+15", label: "Clientes satisfechos" },
-            { value: "4+", label: "Años de experiencia" },
+            { value: "+2", label: "Proyectos entregados" },
+            { value: "+2", label: "Clientes satisfechos" },
+            { value: "+3", label: "Años de experiencia" },
             { value: "100%", label: "Código a medida" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
