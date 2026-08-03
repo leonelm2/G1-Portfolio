@@ -80,22 +80,7 @@ export default function PortfolioSection() {
                       {project.shortDescription}
                     </p>
 
-                    {/* Tech badges */}
-                    <div className="flex flex-wrap gap-1.5 mb-5">
-                      {project.technologies.slice(0, 4).map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/5 text-xs text-gray-500"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 4 && (
-                        <span className="px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/5 text-xs text-gray-600">
-                          +{project.technologies.length - 4}
-                        </span>
-                      )}
-                    </div>
+
 
                     {/* CTA */}
                     <Link
