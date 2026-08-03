@@ -145,7 +145,6 @@ export const projects: Project[] = [
       "Open Graph y metadatos",
     ],
     category: "Web Marketing",
->>>>>>> 8ce27eb4fe95b1a9fa848d57844892a0e689a048
   },
 ];
 
