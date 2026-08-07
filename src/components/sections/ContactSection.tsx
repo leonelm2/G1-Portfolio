@@ -225,7 +225,7 @@ export default function ContactSection() {
                         </svg>
                       </div>
                       <div>
-                        <div className="text-sm font-medium text-white">WhatsApp {name}</div>
+                        <div className="text-sm font-medium text-white">{name}</div>
                         <div className="text-xs text-gray-500">+{number}</div>
                       </div>
                     </a>
