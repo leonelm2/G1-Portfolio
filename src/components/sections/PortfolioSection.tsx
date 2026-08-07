@@ -32,7 +32,7 @@ export default function PortfolioSection() {
               <AnimatedSection key={project.slug} delay={0.07 * i} direction="up">
                 <div className="group h-full flex flex-col rounded-2xl border border-white/5 bg-white/[0.02] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 overflow-hidden">
                   {/* Image */}
-                  <div className="relative h-48 bg-gradient-to-br from-blue-900/30 via-[#111] to-[#0A0A0A] overflow-hidden">
+                  <div className="relative h-64 sm:h-72 lg:h-80 bg-gradient-to-br from-blue-900/30 via-[#111] to-[#0A0A0A] overflow-hidden">
                     {project.thumbnail ? (
                       <img
                         src={project.thumbnail}
