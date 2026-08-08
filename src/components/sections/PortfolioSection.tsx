@@ -373,6 +373,7 @@ export default function PortfolioSection() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-600/5 blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-[500px] h-[400px] bg-indigo-600/5 blur-[120px] pointer-events-none" />
 
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div ref={headerRef} className="text-center mb-16 max-w-3xl mx-auto">
@@ -385,6 +386,38 @@ export default function PortfolioSection() {
             <Layers size={14} />
             <span>PORTFOLIO & CASOS DE ÉXITO</span>
           </motion.div>
+=======
+        {/* Projects grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, i) => {
+            const status = formatStatus(project.status);
+            return (
+              <AnimatedSection key={project.slug} delay={0.07 * i} direction="up">
+                <div className="group h-full flex flex-col rounded-2xl border border-white/5 bg-white/[0.02] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 overflow-hidden">
+                  {/* Image */}
+                  <div className="relative h-64 sm:h-72 lg:h-80 bg-gradient-to-br from-blue-900/30 via-[#111] to-[#0A0A0A] overflow-hidden">
+                    {project.thumbnail ? (
+                      <img
+                        src={project.thumbnail}
+                        alt={project.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-4xl font-bold text-blue-600/20">
+                            {project.name.split(" ").map(w => w[0]).join("").slice(0, 3)}
+                          </div>
+                          <div className="text-xs text-gray-700 mt-2 font-medium">
+                            {project.category}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {/* Overlay on hover */}
+                    <div className="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+>>>>>>> ea15f952515c222acf6cce6bb465f0f034359210
 
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

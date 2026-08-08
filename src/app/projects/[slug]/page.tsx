@@ -178,11 +178,11 @@ export default async function ProjectPage({ params }: Props) {
             {project.images && project.images.length > 0 && (
               <div>
                 <h2 className="text-2xl font-bold text-white mb-6">Galería</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   {project.images.map((imgUrl, i) => (
                     <div
                       key={i}
-                      className="h-48 rounded-xl bg-gradient-to-br from-blue-900/20 via-[#111] to-[#0D0D0D] border border-white/5 flex items-center justify-center overflow-hidden relative"
+                      className="h-80 sm:h-96 rounded-xl bg-gradient-to-br from-blue-900/20 via-[#111] to-[#0D0D0D] border border-white/5 flex items-center justify-center overflow-hidden relative"
                     >
                       <img
                         src={imgUrl}
